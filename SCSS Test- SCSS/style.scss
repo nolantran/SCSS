@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    div {
+        border: solid 2px #c3c3c3;
+        border-radius: 5px;
+        display: flex;
+        max-width: 1400px;
+        margin: 20px;
+        flex: 1 1 0px;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #f9f9f9;
+
+        
+    }
+
+    .first-div .first-title {
+        color: #cc1010;
+    }
+
+    .second-div {
+        border-radius: 5px 5px 5px 0px;
+    }
+
+    .third-div {
+        border-color: #2a2a2a;
+    }
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container {
+      display: unset !important;
+    }
+
+    .div:not(.container) {
+        padding: 10px;
+        margin: 5px;
+    }
+  }
